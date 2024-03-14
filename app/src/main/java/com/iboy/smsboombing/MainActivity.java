@@ -5,6 +5,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.widget.Button;
@@ -42,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
         ecount = findViewById(R.id.ecount);
         etext = findViewById(R.id.etext);
         smslog = findViewById(R.id.smslog);
+
+
+        enumber.setHighlightColor(Color.parseColor("#2DB7BFCD"));
+        ecount.setHighlightColor(Color.parseColor("#2DB7BFCD"));
+        etext.setHighlightColor(Color.parseColor("#2DB7BFCD"));
 
         btn = findViewById(R.id.btn);
         btn.setOnClickListener( v -> {
